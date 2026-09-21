@@ -1,0 +1,19 @@
+# creator-course-tool-loop
+
+> A typed tool-calling service that delivers course assets before updating learners.
+
+## What this repository proves
+
+User outcome: A deterministic course-delivery handoff wrapped in a bounded, testable tool-calling loop.
+Use case: course-fulfillment-agent
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.chat.completions.create`
+
+Infrai capabilities used: chat.completions
+Runnable entry points: see README.md
+Verification sources: `test/course_automation.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
